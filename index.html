@@ -1,90 +1,44 @@
 <!doctype html>
-<html class="no-js" ng-app="myApp" ng-controller="HomeController" lang="en">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Trent Rosane</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 
   </head>
-  <body>
+  <body ng-app="myApp">
+      <div class="row">
+        <header class="header">
+          <h1 class="main-header">Trent Rosane</h1>
+          <ul class="header-subnav">
+            <li><a ui-sref="home" class="is-active">Home</a></li>
+            <li><a ui-sref="projects">Projects</a></li>
+          </ul>
+        </header>
+      </div>
 
-  <div class="row">
-    <header class="header">
-      <h1 class="main-header">Trent Rosane</h1>
-      <ul class="header-subnav">
-        <li><a href="#" class="is-active">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </header>
-  </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div ui-view class="callout large">
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout large">
-
-        <div class="row">
-          <div class="small-12 small-centered columns">
-            <h2 class="text-center">{{title}}</h2>
+           
           </div>
-        </div>
-
-        <div class="row">
-          <div class="small-4 columns">
-            
-            <div class="service">
-              <div class="service-icon-box">
-                <img src="https://www.ardentcreative.com/wp-content/uploads/2013/06/color_web-design-icon.png" alt="" class="service-icon">
-              </div>
-              <h4 class="service-heading">Web Developer</h4>
-              <p class="service-description">My experience with web development includes working on class projects that helped me build foundations in HTML, CSS, JavaScript and AngularJS, as well as working with APIs.</p>
-            </div>
-    
-          </div>
-
-          <div class="small-4 columns">
-            
-            <div class="service">
-              <div class="service-icon-box">
-                <img src="https://www.secureworldexpo.com/sites/secureworld/files/Cybersecurity%20Icon%20-%20Labeled%20for%20Reuse.jpg" alt="" class="service-icon">
-              </div>
-              <h4 class="service-heading">Security Enthusiast</h4>
-              <p class="service-description">I am very interested in cyber security and have experience working with and pentesting vulnerable sites. I am also currently studying for my CompTIA Security+ certification.</p>
-            </div>
-    
-          </div>
-
-          <div class="small-4 small-centered columns">
-            
-            <div class="service">
-              <div class="service-icon-box">
-                <img src="http://essexwebsitestudio.com/wp-content/uploads/2015/06/web_design-icon.png" alt="" class="service-icon">
-              </div>
-              <h4 class="service-heading">Designer</h4>
-              <p class="service-description">Through multiple projects, I have learned about the application design process, such a wireframing, prototyping and user testing.</p>
-            </div>
-    
-          </div>
-        </div>
-
-         
         </div>
       </div>
-    </div>
 
 
 
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/what-input.min.js"></script>
+        <script src="js/foundation.min.js"></script>
   </body>
 </html>
