@@ -1,8 +1,30 @@
-$(document).foundation();
+$(document).ready(function(){
+    $(document).foundation();
+     var animTime = 300,
+      clickPolice = false;
+  
+  $(document).on('touchstart click', '.acc-btn', function(){
+    if(!clickPolice){
+       clickPolice = true;
+      
+      var currIndex = $(this).index('.acc-btn'),
+          targetHeight = $('.acc-content-inner').eq(currIndex).outerHeight();
+   
+      $('.acc-btn h1').removeClass('selected');
+      $(this).find('h1').addClass('selected');
+      
+      $('.acc-content').stop().animate({ height: 0 }, animTime);
+      $('.acc-content').eq(currIndex).stop().animate({ height: targetHeight }, animTime);
+
+      setTimeout(function(){ clickPolice = false; }, animTime);
+    }
+    
+  });
+});
 
 // Create app
 var app = angular.module('myApp', ['ui.router']);
-	.controller("myCtrl", function($scope) {
+	app.controller("myCtrl", function($scope) {
 
 	})
 
@@ -22,6 +44,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	  templateUrl: 'projects.html', // HTML fragment
 	  controller: 'ProjectsController', // Which controller 
   })
+
+  .state('about', { // Landing page
+	  url:'/about',
+	  templateUrl: 'about.html', // HTML fragment
+	  controller: 'AboutController', // Which controller 
+  })
+
+  .state('contact', { // Landing page
+	  url:'/contact',
+	  templateUrl: 'contact.html', // HTML fragment
+	  controller: 'ContactController', // Which controller 
+  })
 })
 
 // Landing page controller: define $scope.number as a number
@@ -34,6 +68,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
 // Content controller: define $scope.url as an image
 .controller('ProjectsController', function($scope, $http){
   $http.get('data.json').success(function (data) {
+		$scope.data = data;
+	});
+})
+
+.controller('AboutController', function($scope, $http){
+	$http.get('data.json').success(function (data) {
+		$scope.data = data;
+	});
+})
+
+.controller('ContactController', function($scope, $http){
+	$http.get('data.json').success(function (data) {
 		$scope.data = data;
 	});
 })

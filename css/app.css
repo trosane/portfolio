@@ -85,3 +85,150 @@ background-color: black; }
         color: #333;
         transition: all .25s ease-in-out; }
 
+.website-example {
+  background: #fff;
+  padding: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .website-example h3 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 0.5rem 0; }
+    @media only screen and (max-width: 64em) {
+      .website-example h3 {
+        padding-top: 1rem; } }
+  .website-example h6 {
+    color: #50b2d0;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 0 0 0.5rem 0; }
+  .website-example p {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    margin: 0;
+    padding: 0.875rem 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999; }
+  .website-example .button {
+    font-weight: bold;
+    color: #2BA6CB;
+    background: transparent;
+    padding-left: 0;
+    margin-bottom: 0;
+    box-shadow: none; }
+
+.row.wide {
+  max-width: rem-calc(1200); }
+
+.hero {
+  background: url("http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .8; }
+  .hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .hero h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center; }
+  .hero p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .hero .tech-img {
+    background: url("http://static.pexels.com/wp-content/uploads/2015/02/apple-hand-iphone-6-4322-525x350.jpg") no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; }
+  @media only screen and (min-width: 40.063em) {
+    .hero .tech-img {
+      height: 18rem;
+      width: 18rem; }
+    .hero h1 {
+      padding-top: 4.5rem;
+      text-align: right;
+      font-size: 2.5rem; }
+    .hero p {
+      text-align: right; } }
+
+/* ACCORDIAN MENU */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+* { 
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.acc-container {
+  width:90%;
+  margin:30px auto 0 auto;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radius:8px;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.acc-btn { 
+  width:100%;
+  margin:0 auto;
+  padding:20px 25px;
+  cursor:pointer;
+  background:#34495E;
+  border-bottom:1px solid #2C3E50;
+}
+
+.acc-content {
+  height:0px;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+  background:#2C3E50;
+}
+
+.acc-content-inner {
+  padding:30px;
+}
+
+.open {
+  height: auto;
+}
+
+.acc-btn h1 {
+  font:700 20px/26px 'Lato', sans-serif;
+  color:#ffffff;
+}
+
+p { 
+  font:400 16px/24px 'Lato', sans-serif;
+  color:#798795;
+}
+
+.selected {
+  color:#1ABC9C;
+}
