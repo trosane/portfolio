@@ -1,4 +1,4 @@
-[{"title":"Who am I?"},
-{"title":"Projects"},
-{"title":"About"},
-{"title":"Contact"}]
+[{"title":"Who am I?","projectName":"Dawg Coffee","projectFocus":"HTML, CSS","projectDesc":"A simple, yet relaxing webpage providing information about a hole-in-the-wall coffee shop.","projectImg":null,"projectLink":null,"class":null,"classInfo":null},
+{"title":"Projects","projectName":"Police Shootings","projectFocus":"JavaScript, jQuery, Leaflet.js","projectDesc":"An informative, interactive site that allows users to interact with a map and view data about police shootings in the United States.","projectImg":null,"projectLink":null,"class":null,"classInfo":null},
+{"title":"About","projectName":"Product Review","projectFocus":"JavaScript, Parse","projectDesc":"This site is a mock review site that allows users to post their opinions on the product, rate it and upvote/downvote other reviews.","projectImg":null,"projectLink":null,"class":null,"classInfo":null},
+{"title":"Contact","projectName":"Spotify Song Search","projectFocus":"Angular.js, Spotify API","projectDesc":"A simplistic site that provides users a platform to easily search for songs in the Spotify library by searching through artists and albums.","projectImg":null,"projectLink":null,"class":null,"classInfo":null}]

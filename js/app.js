@@ -69,6 +69,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 .controller('ProjectsController', function($scope, $http){
   $http.get('data.json').success(function (data) {
 		$scope.data = data;
+		console.log(data)
 	});
 })
 
