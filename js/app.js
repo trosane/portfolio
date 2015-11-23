@@ -63,6 +63,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	$http.get('data.json').success(function (data) {
 		$scope.data = data;
 	});
+	$scope.selected = true;
 })
 
 // Content controller: define $scope.url as an image

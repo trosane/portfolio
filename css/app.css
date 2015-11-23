@@ -26,6 +26,8 @@
   margin: 0 0 10px;
 }
 
+/* LANDING PAGE HOVER INFO */
+
 .service {
   width: 100%;
   height: 320px;
@@ -76,6 +78,8 @@ body {
   background-image: url('../img/anchorage.jpg');
   background-size: cover;
 }
+
+/* NAV BAR */
 
 .header {
 text-align: center;
@@ -148,9 +152,6 @@ background-color: black; }
 
 .row.wide {
   max-width: rem-calc(1200); }
-
-/* CONTACT PAGE */
-
 
 /* ACCORDIAN MENU */
 
@@ -262,6 +263,10 @@ i {
 .linkedin span {
   background-color: #db5a3c; }
 
+.github span {
+  background-color: #333333;
+}
+
 .icon-button .fi-social-twitter {
   color: #4099ff; }
 
@@ -272,8 +277,13 @@ i {
   color: #db5a3c;
 }
 
+.icon-button .fi-social-github {
+  color: #333333;
+}
 
-.icon-button:hover .fi-social-twitter, .icon-button:hover .fi-social-facebook, .icon-button:hover .fi-social-linkedin {
+
+.icon-button:hover .fi-social-twitter, .icon-button:hover .fi-social-facebook, .icon-button:hover .fi-social-linkedin,
+.icon-button:hover .fi-social-github {
   color: white;
   font-size: 2.6rem;
   line-height: 3.9rem; }
