@@ -4,79 +4,19 @@
   </div>
 </div>
 
- <article class="website-example row wide">
+ <article class="website-example row wide" ng-repeat="item in data">
     <div class="large-6 columns">
       <div class="row">
         <div class="small-8 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Desktop Image">
-        </div>
-        <div class="small-4 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Mobile Image">
+          <img src="{{item.projectImg}}" alt="">
         </div>
       </div>
     </div>
     <div class="large-6 columns">
-      <h3>{{data[0].projectName}}</h3>
-      <h6>Focus: {{data[0].projectFocus}}</h6>
-      <p>{{data[0].projectDesc}}</p>
-      <a class="button" href="http://5-door.mini.com.au/">Visit the site »</a>
-    </div>
-  </article>
-
-  <article class="website-example row wide">
-    <div class="large-6 columns">
-      <div class="row">
-        <div class="small-8 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Desktop Image">
-        </div>
-        <div class="small-4 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Mobile Image">
-        </div>
-      </div>
-    </div>
-    <div class="large-6 columns">
-      <h3>{{data[1].projectName}}</h3>
-      <h6>Focus: {{data[1].projectFocus}}</h6>
-      <p>{{data[1].projectDesc}}</p>
-      <a class="button" href="http://5-door.mini.com.au/">Visit the site »</a>
-    </div>
-  </article>
-
-  <article class="website-example row wide">
-    <div class="large-6 columns">
-      <div class="row">
-        <div class="small-8 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Desktop Image">
-        </div>
-        <div class="small-4 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Mobile Image">
-        </div>
-      </div>
-    </div>
-    <div class="large-6 columns">
-      <h3>{{data[2].projectName}}</h3>
-      <h6>Focus: {{data[2].projectFocus}}</h6>
-      <p>{{data[2].projectDesc}}</p>
-      <a class="button" href="http://5-door.mini.com.au/">Visit the site »</a>
-    </div>
-  </article>
-
-  <article class="website-example row wide">
-    <div class="large-6 columns">
-      <div class="row">
-        <div class="small-8 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Desktop Image">
-        </div>
-        <div class="small-4 columns">
-          <img src="http://www.safeoffleashdogplay.com/wp-content/uploads/2013/05/Puppy-3-dogs.jpg" alt="Mini Cooper Site Mobile Image">
-        </div>
-      </div>
-    </div>
-    <div class="large-6 columns">
-      <h3>{{data[3].projectName}}</h3>
-      <h6>Focus: {{data[3].projectFocus}}</h6>
-      <p>{{data[3].projectDesc}}</p>
-      <a class="button" href="http://5-door.mini.com.au/">Visit the site »</a>
+      <h3>{{item.projectName}}</h3>
+      <h6>Focus: {{item.projectFocus}}</h6>
+      <p>{{item.projectDesc}}</p>
+      <a class="button" href="{{item.projectLink}}">Visit the site »</a>
     </div>
   </article>
 

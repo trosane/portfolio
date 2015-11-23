@@ -1,5 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:700);
 
+/* ABOUT PAGE */
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+/* CONTACT PAGE */
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
 .service {
   width: 100%;
   height: 320px;
@@ -123,55 +149,8 @@ background-color: black; }
 .row.wide {
   max-width: rem-calc(1200); }
 
-.hero {
-  background: url("http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100vh; }
-  .hero:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-    opacity: .8; }
-  .hero .intro {
-    padding: 3rem;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
-  .hero h1 {
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 1.5em;
-    letter-spacing: -0.025em;
-    font-weight: 300;
-    text-align: center; }
-  .hero p {
-    color: #fff;
-    line-height: 1.75em;
-    font-weight: 200;
-    text-align: center;
-    margin-bottom: 2rem; }
-  .hero .tech-img {
-    background: url("http://static.pexels.com/wp-content/uploads/2015/02/apple-hand-iphone-6-4322-525x350.jpg") no-repeat center center;
-    background-size: cover;
-    height: 9rem;
-    width: 9rem;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto; }
-  @media only screen and (min-width: 40.063em) {
-    .hero .tech-img {
-      height: 18rem;
-      width: 18rem; }
-    .hero h1 {
-      padding-top: 4.5rem;
-      text-align: right;
-      font-size: 2.5rem; }
-    .hero p {
-      text-align: right; } }
+/* CONTACT PAGE */
+
 
 /* ACCORDIAN MENU */
 
@@ -232,3 +211,70 @@ p {
 .selected {
   color:#1ABC9C;
 }
+
+/* SOCIAL ICONS */
+
+i {
+  font-size: 2.5rem; }
+
+.icon-button {
+  border-radius: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  background: white; }
+  .icon-button span {
+    display: block;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 0.3s; }
+  .icon-button:hover span {
+    display: block;
+    border-radius: 3.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: -1.8rem; }
+  .icon-button i {
+    background: none;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    line-height: 3.6rem;
+    transition: all 0.3s; }
+
+.twitter span {
+  background-color: #4099ff; }
+
+.facebook span {
+  background-color: #3B5998; }
+
+.linkedin span {
+  background-color: #db5a3c; }
+
+.icon-button .fi-social-twitter {
+  color: #4099ff; }
+
+.icon-button .fi-social-facebook {
+  color: #3b5998; }
+
+.icon-button .fi-social-linkedin {
+  color: #db5a3c;
+}
+
+
+.icon-button:hover .fi-social-twitter, .icon-button:hover .fi-social-facebook, .icon-button:hover .fi-social-linkedin {
+  color: white;
+  font-size: 2.6rem;
+  line-height: 3.9rem; }
+
